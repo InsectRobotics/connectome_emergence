@@ -1,0 +1,11 @@
+{
+ "accuracy": 0.7128571428571429,
+ "sparsity": 0.12378176344050602,
+ "centroid": 0.66,
+ "al_decorr": 5.0652242278391935,
+ "mb_decorr": 36.75808276927962,
+ "total_decorr": 40.35943273803109,
+ "mancini": 1.8110205665502523,
+ "seed": 46,
+ "label": "std_canonical"
+}

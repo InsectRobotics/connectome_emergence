@@ -1,0 +1,10 @@
+{
+ "accuracy": 0.65,
+ "sparsity": 0.11994949448853731,
+ "centroid": 0.6185714285714285,
+ "al_decorr": 16.935189327611923,
+ "mb_decorr": 30.764825091905223,
+ "total_decorr": 43.00798112409876,
+ "seed": 42,
+ "label": "r3ii_no_apl_fix"
+}

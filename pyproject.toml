@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "connectome-emergence"
+version = "1.0.0"
+description = "Connectome-constrained spiking neural network model of the larval Drosophila olfactory pathway (CCN 2026)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "Jordan Watts", email = "J.Watts-2@sms.ed.ac.uk" },
+    { name = "Barbara Webb" },
+]
+dependencies = [
+    "torch>=2.0",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pandas>=1.5",
+    "scikit-learn>=1.2",
+    "matplotlib>=3.7",
+    "jupyterlab>=4.0",
+    "psutil>=5.9",
+]
+
+[project.urls]
+Repository = "https://github.com/InsectRobotics/connectome_emergence"
+
+# Source root is code/, so the existing top-level imports (`from core.`, `from analysis.`,
+# `from scripts.`) resolve unchanged after install.
+[tool.setuptools]
+package-dir = { "" = "code" }
+
+[tool.setuptools.packages.find]
+where = ["code"]
+include = ["core*", "analysis*", "scripts*"]

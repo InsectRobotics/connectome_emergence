@@ -1,0 +1,42 @@
+{
+  "label": "r3ii_no_apl_fix_s45",
+  "seed": 45,
+  "loss": "CE + KC_sp [no_apl]",
+  "energy_weight": 0.0,
+  "apl_boost": 4.0,
+  "accuracy": 0.6285714285714286,
+  "centroid_accuracy": 0.575,
+  "per_type_sparsity": {
+    "orn": 0.7545745107862685,
+    "ln": 0.34987997346454197,
+    "pn": 0.20907278690073225,
+    "kc": 0.12201002985239029
+  },
+  "decorrelation": {
+    "al": 13.616367404053864,
+    "mb": 35.23783351508748,
+    "total": 44.66893154518715
+  },
+  "mancini": {
+    "ratio": NaN,
+    "passes": false,
+    "baseline": NaN,
+    "boosted": NaN
+  },
+  "concentration_invariance": {
+    "or_range": 1.755361791804244,
+    "pn_range": 1.1137362964260842,
+    "kc_range": 1.054769154811497,
+    "sublinear_pn": true,
+    "flat_kc": true,
+    "robust_class": true,
+    "odor_identity": "PARTIAL"
+  },
+  "g_soma_nS": 13.963451755328864,
+  "apl_gain": 3.783505853677006e-44,
+  "gap_conductances_nS": {
+    "ln_nS": 0.10983165642953276,
+    "pn_nS": 0.12419624016876384,
+    "eln_pn_nS": 0.09578067813254437
+  }
+}

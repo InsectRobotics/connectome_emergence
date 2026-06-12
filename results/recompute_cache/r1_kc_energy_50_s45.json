@@ -1,0 +1,10 @@
+{
+ "accuracy": 0.6385714285714286,
+ "sparsity": 0.136743410829116,
+ "centroid": 0.61,
+ "al_decorr": 8.364467916034224,
+ "mb_decorr": 47.67165871328761,
+ "total_decorr": 52.20151153530417,
+ "seed": 45,
+ "label": "r1_kc_energy_50"
+}

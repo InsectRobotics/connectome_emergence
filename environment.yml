@@ -1,0 +1,16 @@
+name: connectome-emergence
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.10
+  - pytorch>=2.0          # spiking model + surrogate-gradient training
+  - numpy>=1.24
+  - scipy>=1.10
+  - pandas>=1.5           # Kreher-2008 OR-response tables
+  - scikit-learn>=1.2     # LinearSVC / cross_val_score for the odor-mixture separability metric
+  - matplotlib>=3.7       # figure generation
+  - jupyterlab>=4.0       # runs code/notebook/paper_figures.ipynb
+  - psutil>=5.9           # auto-detects parallel-training worker count (optional; falls back to os.cpu_count)
+  - pip

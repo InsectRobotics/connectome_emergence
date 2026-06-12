@@ -1,0 +1,36 @@
+{
+  "label": "kc_energy_50",
+  "energy_weight": 50.0,
+  "seed": 43,
+  "loss_formulation": "CE + 50.0 * energy (no KC sparsity)",
+  "accuracy": 0.7142857142857143,
+  "centroid_accuracy": 0.6357142857142857,
+  "per_type_sparsity": {
+    "orn": 0.6936728424496121,
+    "ln": 0.34720079104105633,
+    "pn": 0.21923225455813938,
+    "kc": 0.13866383665137821
+  },
+  "decorrelation": {
+    "al": 8.515337866285144,
+    "mb": 49.23691592389784,
+    "total": 53.929942922846344
+  },
+  "mancini": {
+    "ratio": 2.348797250859106,
+    "passes": "True",
+    "baseline": 68.35,
+    "boosted": 29.1
+  },
+  "concentration_invariance": {
+    "or_range": 1.7608588359388229,
+    "pn_range": 1.3770520960751478,
+    "kc_range": 1.1876703935097963,
+    "sublinear_pn": true,
+    "flat_kc": true,
+    "robust_class": true,
+    "odor_identity": "PARTIAL"
+  },
+  "g_soma_nS": 12.05857284873022,
+  "apl_gain": 6.877619743347168
+}
