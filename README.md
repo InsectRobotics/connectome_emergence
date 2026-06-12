@@ -14,9 +14,15 @@ See [`CCN_Final_2026.pdf`](CCN_Final_2026.pdf).
 ```bash
 git clone https://github.com/InsectRobotics/connectome_emergence.git
 cd connectome_emergence
+python3 -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 pip install .
 ```
+
+> **Create the environment with Python ≥3.10** (check with `python3 --version`). Installing into a
+> fresh virtual environment matters: a system Python below 3.10 (e.g. macOS's `/usr/bin/python3`,
+> which is 3.9) is rejected by `pip install .` (`requires-python >=3.10`), and installing into a
+> system/Homebrew Python can fail with `externally-managed-environment` (PEP 668). The venv avoids both.
 
 This installs the model code as the importable `core`, `analysis`, and `scripts` packages
 (source root `code/`). Dependencies (`requirements.txt` / `pyproject.toml`): Python ≥3.10,
@@ -28,6 +34,9 @@ JupyterLab, and psutil (auto-detects parallel-training worker count, falls back 
 > — so they resolve `data/` and `results/` relative to the cloned repo.
 
 **Conda alternative:** `conda env create -f environment.yml && conda activate connectome-emergence`.
+The env uses only the `conda-forge` and `pytorch` channels, so no Anaconda Terms-of-Service prompt is
+required. (If an older `environment.yml` or your conda config pulls in the `defaults` channel and the
+create stops with a Terms-of-Service error, run `conda tos accept` once, then retry.)
 
 ## Architecture
 

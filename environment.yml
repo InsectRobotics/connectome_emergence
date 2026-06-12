@@ -2,7 +2,7 @@ name: connectome-emergence
 channels:
   - pytorch
   - conda-forge
-  - defaults
+  - nodefaults            # ignore the Anaconda 'defaults' channel even if the user's global conda config adds it (avoids its Terms-of-Service gate)
 dependencies:
   - python>=3.10
   - pytorch>=2.0          # spiking model + surrogate-gradient training
