@@ -1022,8 +1022,8 @@ def plot_concentration(conc_data, concentrations=None, hill_ec50=1.0,
     ax.errorbar(concentrations, kc_cent_mean, yerr=kc_cent_std, fmt='s--', color=c_kc,
                 linewidth=1.5, markersize=6, capsize=4, elinewidth=1.2, capthick=1.2,
                 label='KC centroid (0 params)')
-    # Chance accuracy for a forced choice among 27 alternatives (100/27 %).
-    ax.axhline(y=100/27, color='red', linestyle=':', alpha=0.4, label=f'Chance ({100/27:.1f}%)')
+    # Chance accuracy for the 28-way odor classification (100/28 %); matches the body text's 3.6%.
+    ax.axhline(y=100/28, color='red', linestyle=':', alpha=0.4, label=f'Chance ({100/28:.1f}%)')
     ax.axvline(x=1.0, color='gray', linestyle=':', alpha=0.5, label='Training conc.')
     ax.set_xlabel('Concentration (relative)', fontsize=label_fs)
     ax.set_ylabel('Classification Accuracy (%)', fontsize=label_fs)
