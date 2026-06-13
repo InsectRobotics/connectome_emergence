@@ -6,8 +6,7 @@ constrained by the complete Winding et al. (2023) connectome. All connectivity
 to the connectome; only 449 scalar biophysical parameters are learned.
 
 **Paper**: "Connectome-Constrained Spiking Neural Networks Reproduce Emergent
-Computations in the Larval *Drosophila* Olfactory Pathway" (Cognitive Computation Neuroscience 2026).
-See [`CCN_Final_2026.pdf`](CCN_Final_2026.pdf). 
+Computations in the Larval *Drosophila* Olfactory Pathway" (Cognitive Computation Neuroscience 2026). 
 
 ## Installation
 
@@ -91,7 +90,6 @@ connectome_emergence/
 |   |-- odor_mixtures_r5/  teacher_consistency_r2/  task_complexity_r6/
 |   +-- _shuffled_connectomes/  recompute_cache/  f4_extra/
 |-- figures/                               # notebook outputs: PNGs + vector PDFs + paper_values.json
-|-- CCN_Final_2026.pdf                     # the paper (CCN 2026)
 +-- environment.yml   pyproject.toml   requirements.txt   .gitignore   LICENSE   README.md
 ```
 
